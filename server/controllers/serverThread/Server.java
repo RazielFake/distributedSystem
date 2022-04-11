@@ -38,7 +38,7 @@ public class Server extends Thread{
             ObjectInputStream ois = new ObjectInputStream(service.getInputStream());
             //RECIEVE THE LIST WITH THE NUMBERS
             list = (ArrayList) ois.readObject();
-            //RECIBIMOS LA HORA
+            //RECIEVE THE HOUR
             String hour = dis.readUTF();
             
             //SENDING ACK
